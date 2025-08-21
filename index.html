@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskMate - Gestor de Tareas</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Barra lateral -->
+  <nav class="sidebar">
+    <h2>🚀 TaskMate</h2>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#about">Sobre nosotros</a></li>
+      <li><a href="#tasks">Administrar tareas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <!-- Sección Inicio -->
+    <section id="inicio" class="section">
+      <div class="banner">
+        <div class="overlay">
+          <h1>Bienvenido a TaskMate 🚀</h1>
+          <p>Convierte tus pendientes en logros diarios ✨</p>
+          <a href="#tasks" class="btn-banner">Comienza ahora</a>
+        </div>
+      </div>
+    </section>
+
+<!-- Sección Sobre nosotros -->
+<section id="about" class="section about-section">
+  <h2>Sobre TaskMate 🚀</h2>
+  <p class="about-text">
+    TaskMate es tu mejor aliado para organizar las tareas del hogar y mantener todo bajo control.  
+    Planifica, prioriza y realiza seguimiento de tus pendientes diarios, semanales o mensuales, 
+    ¡y nunca más olvidarás nada! ✅🧹
+  </p>
+
+  <p class="about-text">
+    Creada por <strong>Alexandra</strong> como proyecto de portafolio, TaskMate busca demostrar cómo la tecnología puede 
+    hacer que las tareas del hogar sean más divertidas y fáciles de gestionar. 🎉📅
+  </p>
+
+  <!-- Estadísticas divertidas -->
+  <div class="stats">
+    <div class="stat-card">🧹<h4>20+</h4><p>Tareas completadas semanalmente</p></div>
+    <div class="stat-card">🗓️<h4>7</h4><p>Días de planificación</p></div>
+    <div class="stat-card">🏆<h4>100%</h4><p>Hogar organizado</p></div>
+  </div>
+
+  <!-- Imagen decorativa -->
+  <div class="about-image">
+    <img src="assets/home-tasks.png" alt="Organiza tu hogar">
+  </div>
+</section>
+
+
+
+
+    <!-- Sección Administrar tareas -->
+    <section id="tasks" class="section">
+      <h2>Mis Tareas</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Escribe una nueva tarea...">
+        <input type="date" id="taskDate">
+        <input type="time" id="taskTime">
+        <select id="taskPriority">
+          <option value="" disabled selected>Seleccione prioridad</option>
+          <option value="alta">Alta</option>
+          <option value="media">Media</option>
+          <option value="baja">Baja</option>
+        </select>
+        <button id="addTaskBtn">➕ Agregar</button>
+      </div>
+      <ul id="taskContainer"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section footer">
+      <p>📌 TaskMate - Proyecto de Portafolio | Desarrollado por Alexandra</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
