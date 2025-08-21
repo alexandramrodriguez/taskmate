@@ -155,3 +155,18 @@ taskInput.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
 taskTime.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
 taskPriority.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
 taskDate.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();}); // nuevo
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+const sidebarLinks = document.querySelectorAll('.sidebar a');
+
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
+});
+
+sidebarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+  });
+});

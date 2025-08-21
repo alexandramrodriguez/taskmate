@@ -84,8 +84,7 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     border:none; 
     padding:10px 20px; 
     border-radius:6px; 
-    cursor:pointer; 
-    transition:background 0.3s; }
+    cursor:pointer;  }
 #addTaskBtn:hover { background:#007bff; }
 
 /* === LISTA DE TAREAS === */
@@ -257,3 +256,41 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 .about-image img:hover {
   transform: scale(1.05);
 }
+
+
+/* === Botón hamburguesa === */
+.menu-toggle {
+  position: fixed;
+  top: 20px; /* ajusta la distancia desde arriba */
+  left: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* arriba de todo */
+}
+
+/* Sidebar en móvil */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px; /* fuera de pantalla */
+    width: 220px;
+    height: 100%;
+    padding-top: 60px; /* baja el contenido para que el icono no lo tape */
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0; /* visible */
+  }
+
+  .content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+}
+
+
