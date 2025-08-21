@@ -19,12 +19,12 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 /* === CONTENIDO PRINCIPAL === */
 .content { margin-left:240px; padding:20px; flex:1; display:flex; flex-direction:column; }
 .section {
-  min-height: 100vh; /* Ocupa toda la altura de la ventana */
-  padding: 60px 20px; /* Separación interna */
+  min-height: 100vh; 
+  padding: 60px 20px; 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* empieza desde arriba */
+  justify-content: flex-start; 
 }.section h2 { text-align:center; font-size:2rem; margin-bottom:20px; color:#333; }
 
 /* === BANNER HEADER === */
@@ -178,7 +178,7 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
 /* --- Sobre nosotros --- */
 .about-section {
-  background: linear-gradient(135deg, #9ac8f3, #6ce9ce); /* Fondo vibrante */
+  background: linear-gradient(135deg, #9ac8f3, #6ce9ce); 
   padding: 60px 20px;
   border-radius: 15px;
   display: flex;
@@ -258,16 +258,16 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-/* === Botón hamburguesa === */
+/* Botón hamburguesa */
 .menu-toggle {
   position: fixed;
-  top: 20px; /* ajusta la distancia desde arriba */
+  top: 20px; 
   left: 20px;
   font-size: 28px;
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1001; /* arriba de todo */
+  z-index: 1001; 
 }
 
 /* Sidebar en móvil */
@@ -275,16 +275,16 @@ body { font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   .sidebar {
     position: fixed;
     top: 0;
-    left: -220px; /* fuera de pantalla */
+    left: -220px; 
     width: 220px;
     height: 100%;
-    padding-top: 60px; /* baja el contenido para que el icono no lo tape */
+    padding-top: 60px; 
     transition: left 0.3s ease;
     z-index: 1000;
   }
 
   .sidebar.active {
-    left: 0; /* visible */
+    left: 0; 
   }
 
   .content {

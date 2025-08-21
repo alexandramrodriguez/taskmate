@@ -38,7 +38,7 @@ function addTask() {
   priorityTag.classList.add("priority", priority);
   priorityTag.textContent = priority.charAt(0).toUpperCase() + priority.slice(1);
 
-  // Status (igual que tu código original)
+  // Status 
   const statusContainer = document.createElement("div");
   statusContainer.classList.add("status-container");
   ["Incompleto","En proceso","Completado"].forEach((estado,i) => {
@@ -136,9 +136,9 @@ function addTask() {
   actionsContainer.appendChild(editBtn);
   actionsContainer.appendChild(deleteBtn);
 
-  // Agregamos todo al li
+
   li.appendChild(taskSpan);
-  li.appendChild(dateSpan); // fecha
+  li.appendChild(dateSpan);
   li.appendChild(timeSpan);
   li.appendChild(priorityTag);
   li.appendChild(statusContainer);
@@ -154,8 +154,7 @@ addTaskBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
 taskTime.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
 taskPriority.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();});
-taskDate.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();}); // nuevo
-
+taskDate.addEventListener("keypress",(e)=>{if(e.key==="Enter") addTask();}); 
 
 const menuToggle = document.getElementById('menu-toggle');
 const sidebar = document.querySelector('.sidebar');
